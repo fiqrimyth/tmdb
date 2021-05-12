@@ -20,6 +20,7 @@ class _VideoPageState extends State<VideoPage> with TickerProviderStateMixin {
 
   bool _initLoaded = true;
   bool _isFetching = true;
+  // ignore: unused_field
   bool _isEmpty = false;
 
   List<VideoModel> _videos;

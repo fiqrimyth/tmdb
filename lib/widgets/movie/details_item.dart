@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tmdb/const/constant.dart';
 
+// ignore: must_be_immutable
 class DetailsItem extends StatelessWidget {
   final String left;
   final String right;

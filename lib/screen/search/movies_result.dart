@@ -34,10 +34,6 @@ class _MoviesResultState extends State<MoviesResult> {
     super.didChangeDependencies();
   }
 
-  // Widget _buildMovieSearchItem(BuildContext context, prov.MovieItem item) {
-  //   return
-  // }
-
   Widget _buildLoadingIndicator(BuildContext context) {
     return Center(
       child: widget.searchController.text.isEmpty ? null : LoadingIndicator(),

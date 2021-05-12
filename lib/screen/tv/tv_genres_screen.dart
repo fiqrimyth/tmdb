@@ -17,7 +17,6 @@ class _GenresScreenState extends State<GenresScreen>
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _scrollController = ScrollController();
   }
@@ -56,6 +55,5 @@ class _GenresScreenState extends State<GenresScreen>
   }
 
   @override
-  // TODO: implement wantKeepAlive
   bool get wantKeepAlive => true;
 }

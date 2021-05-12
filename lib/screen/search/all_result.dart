@@ -123,6 +123,7 @@ class _AllResultsState extends State<AllResults> {
           Container(
             width: MediaQuery.of(context).size.width * 0.5,
             child: Center(
+              // ignore: deprecated_member_use
               child: OutlineButton(
                 focusColor: Theme.of(context).accentColor,
                 // highlightColor: Theme.of(context).accentColor,
@@ -144,6 +145,7 @@ class _AllResultsState extends State<AllResults> {
     );
   }
 
+  // ignore: unused_element
   String _getName(String str) {
     if (str == null || str.length == 0) return 'N/A';
 

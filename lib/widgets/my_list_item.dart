@@ -89,23 +89,12 @@ class MyListsItem extends StatelessWidget {
         ),
       ),
     );
-    //  ListTile(
-    //   leading: ListItemLeading(list['data']),
-    //   title: Text(list['title'], style: kListsItemTitleStyle,),
-    //   trailing: Text('${list['data'].length}', style: kSubtitle1,),
-    // );
   }
 }
 
 class ListItemLeading extends StatelessWidget {
   final List<dynamic> data;
   ListItemLeading(this.data);
-
-  // List<Widget> _buildImges() {
-  //   return [
-  //     CachedNetworkImage(),
-  //   ];
-  // }
 
   @override
   Widget build(BuildContext context) {

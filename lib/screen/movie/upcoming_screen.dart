@@ -89,10 +89,6 @@ class _AllMoviesState extends State<UpcomingScreen>
     var movies = Provider.of<Movies>(context).upcoming;
     return SafeArea(
       child: Scaffold(
-        // appBar: AppBar(
-        //   centerTitle: true,
-        //   title: Text('Coming Soon', style: kTitleStyle),
-        // ),
         body: NotificationListener(
           onNotification: onNotification,
           child: Stack(

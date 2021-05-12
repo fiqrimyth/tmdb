@@ -77,6 +77,7 @@ class _TrendingTVScreenState extends State<TrendingTVScreen> {
     return true;
   }
 
+  // ignore: unused_element
   Future<void> _refreshMovies(bool refresh) async {
     if (refresh) await Provider.of<TV>(context, listen: false).fetchPopular(1);
   }
@@ -87,10 +88,6 @@ class _TrendingTVScreenState extends State<TrendingTVScreen> {
     // print('------------> length: ${movies.length}');
     return SafeArea(
       child: Scaffold(
-        // appBar: AppBar(
-        //   centerTitle: true,
-        //   title: Text('Popular', style: kTitleStyle),
-        // ),
         body: NotificationListener(
           onNotification: onNotification,
           child: Stack(

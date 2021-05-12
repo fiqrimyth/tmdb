@@ -19,14 +19,6 @@ class _CinemasScreenState extends State<CinemasScreen>
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text('Coming soon...', style: kTitleStyle),
-            // IconButton(
-            //   icon: Icon(Icons.search),
-            //   color: Colors.red,
-            //   iconSize: 60,
-            //   onPressed: () {
-            //     Provider.of<Search>(context, listen: false).clearPrefs();
-            //   },
-            // )
           ],
         ),
       ),

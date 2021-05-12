@@ -33,7 +33,6 @@ class _AllMoviesState extends State<OnAirScreen> {
   @override
   void initState() {
     scrollController = ScrollController();
-    // TODO: implement initState
     super.initState();
   }
 
@@ -43,7 +42,6 @@ class _AllMoviesState extends State<OnAirScreen> {
       Provider.of<TV>(context, listen: false).fetchOnAirToday(1);
     }
     _initLoaded = false;
-    // TODO: implement didChangeDependencies
     super.didChangeDependencies();
   }
 
@@ -79,6 +77,7 @@ class _AllMoviesState extends State<OnAirScreen> {
     return true;
   }
 
+  // ignore: unused_element
   Future<void> _refreshMovies(bool refresh) async {
     if (refresh)
       await Provider.of<TV>(context, listen: false).fetchOnAirToday(1);
@@ -90,10 +89,6 @@ class _AllMoviesState extends State<OnAirScreen> {
     // print('------------> length: ${movies.length}');
     return SafeArea(
       child: Scaffold(
-        // appBar: AppBar(
-        //   centerTitle: true,
-        //   title: Text('On Air', style: kTitleStyle,),
-        // ),
         body: NotificationListener(
           onNotification: onNotification,
           child: Stack(

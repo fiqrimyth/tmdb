@@ -39,12 +39,6 @@ class _MainScreenState extends State<MainScreen>
     );
     _pageController =
         PageController(initialPage: _selectedIndex, keepPage: true);
-
-    // _tabController.addListener(() {
-    //   if(_tabController.indexIsChanging) {
-    //     FocusScope.of(context).nextFocus();
-    //   }
-    // });
   }
 
   @override
@@ -74,23 +68,12 @@ class _MainScreenState extends State<MainScreen>
   void _onTap(int newIndex) {
     setState(() {
       _selectedIndex = newIndex;
-      // _tabController.index = newIndex;
       _pageController.jumpToPage(newIndex);
     });
   }
 
   @override
   Widget build(BuildContext context) {
-    // SysQuery().init(context);
-    // final _background_image = Image.asset(
-    //   'assets/images/background_image_1.jpg',
-    //   fit: BoxFit.cover,
-    // );
-
-    // final transparentBackground = Container(
-    //   color: TRRANSPARENT_BACKGROUND_COLOR,
-    // );
-
     final currentPage = BottomTabs(
       currentIndex: _selectedIndex,
       onTap: _onTap,
@@ -102,7 +85,6 @@ class _MainScreenState extends State<MainScreen>
         children: <Widget>[
           _buildTabContent(),
           currentPage,
-          // bottom,
         ],
       ),
     );

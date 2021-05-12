@@ -22,12 +22,6 @@ class BottomTabs extends StatelessWidget {
         onTap: onTap,
         items: [
           BottomNavigationBarItem(
-            // title: Text(
-            //   'Discover',
-            //   style: kBottomBarTextStyle,
-            // ),
-            // activeIcon:Icon(Icons.home),
-            // icon: Icon(CupertinoIcons.home),
             icon: SvgPicture.asset('assets/svg/home.svg',
                 width: 25, height: 25, color: Colors.white.withOpacity(0.7)),
             activeIcon: SvgPicture.asset('assets/svg/Home_solid.svg',
@@ -35,11 +29,6 @@ class BottomTabs extends StatelessWidget {
             backgroundColor: Theme.of(context).primaryColor,
           ),
           BottomNavigationBarItem(
-            // title: Text(
-            //   'Search',
-            //   style: kBottomBarTextStyle,
-            // ),
-            // icon: Icon(CupertinoIcons.search),
             icon: SvgPicture.asset('assets/svg/Search.svg',
                 width: 25, height: 25, color: Colors.white.withOpacity(0.7)),
             activeIcon: SvgPicture.asset('assets/svg/Search.svg',
@@ -47,10 +36,6 @@ class BottomTabs extends StatelessWidget {
             backgroundColor: Theme.of(context).primaryColor,
           ),
           BottomNavigationBarItem(
-            // title: Text(
-            //   'Lists',
-            //   style: kBottomBarTextStyle,
-            // ),
             icon: SvgPicture.asset('assets/svg/list.svg',
                 width: 25, height: 25, color: Colors.white.withOpacity(0.7)),
             activeIcon: SvgPicture.asset('assets/svg/list_solid.svg',
@@ -58,20 +43,11 @@ class BottomTabs extends StatelessWidget {
             backgroundColor: Theme.of(context).primaryColor,
           ),
           BottomNavigationBarItem(
-            // title: Text(
-            //   'Cinemas',
-            //   style: kBottomBarTextStyle,
-            // ),
             icon: Icon(CupertinoIcons.location),
             activeIcon: Icon(CupertinoIcons.location_solid),
             backgroundColor: Theme.of(context).primaryColor,
           ),
           BottomNavigationBarItem(
-            // title: Text(
-            //   'Account',
-            //   style: kBottomBarTextStyle,
-            // ),
-            // icon: Icon(CupertinoIcons.profile_circled),
             icon: SvgPicture.asset('assets/svg/Profile.svg',
                 width: 25, height: 25, color: Colors.white.withOpacity(0.7)),
             activeIcon: SvgPicture.asset('assets/svg/Profile.svg',

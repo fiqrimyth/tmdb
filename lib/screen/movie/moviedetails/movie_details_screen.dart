@@ -32,6 +32,7 @@ class _MovieDetailsPageState extends State<MovieDetailsScreen>
   TextEditingController _textEditingController;
 
   AnimationController _animationController;
+  // ignore: unused_field
   Animation<Offset> _animation;
   // ScrollController _scrollController;
 

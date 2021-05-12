@@ -23,6 +23,7 @@ class _ActorsResultState extends State<ActorsResult> {
   int curPage = 1;
   CancelableOperation _operation;
   LoaderStatus _loaderStatus = LoaderStatus.STABLE;
+  // ignore: unused_field
   bool _isFetchingNewData = false;
 
   @override

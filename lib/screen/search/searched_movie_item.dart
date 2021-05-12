@@ -11,6 +11,7 @@ class SearchedMovieItem extends StatelessWidget {
   final dynamic item;
   SearchedMovieItem(this.item);
 
+  // ignore: unused_element
   Route _buildRoute(dynamic item, [bool searchHistoryItem = false]) {
     // if not search history item create initData for the tv show details screen
     InitData initData = InitData.formObject(item);

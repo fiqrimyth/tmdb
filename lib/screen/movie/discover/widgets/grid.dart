@@ -26,8 +26,6 @@ class Grid extends StatelessWidget {
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 1,
         childAspectRatio: isRound ? 2 / 3 : 1.5,
-        //TODO fix (The "maxPaintExtent" is less than the "paintExtent".) when mainAxisSpacing set
-        // mainAxisSpacing: 10,
       ),
       scrollDirection: Axis.horizontal,
     );

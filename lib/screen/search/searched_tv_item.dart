@@ -12,6 +12,7 @@ class SearchedTVItem extends StatelessWidget {
   final TVModel item;
   SearchedTVItem(this.item);
 
+  // ignore: unused_element
   Route _buildRoute([bool searchHistoryItem = false]) {
     final initData = InitData.formObject(item);
     return MaterialPageRoute(

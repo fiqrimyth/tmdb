@@ -132,9 +132,6 @@ class TV with ChangeNotifier {
   }
 
   Future<void> getVideos(int id) async {
-    // final url =
-    // '$BASE_URL/tv/$id/videos?api_key=${DotEnv().env['API_KEY']}&language=en-US';
-    // 'https://api.themoviedb.org/3'
     final url =
         'https://api.themoviedb.org/3/tv/$id/videos?api_key=$API_KEY&language=en-US';
     try {

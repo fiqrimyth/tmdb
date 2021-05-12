@@ -36,6 +36,7 @@ class DialogButton extends StatelessWidget {
                 ),
                 child: Padding(
                   padding: const EdgeInsets.only(top: 5.0),
+                  // ignore: deprecated_member_use
                   child: FlatButton(
                     child: Text(
                       title,
@@ -51,6 +52,7 @@ class DialogButton extends StatelessWidget {
               )
             : Padding(
                 padding: const EdgeInsets.only(top: 5.0),
+                // ignore: deprecated_member_use
                 child: FlatButton(
                   child: Text(
                     title,

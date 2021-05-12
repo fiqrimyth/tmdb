@@ -1,7 +1,6 @@
 import 'dart:convert';
 
 import 'package:flutter/cupertino.dart';
-import 'package:provider/provider.dart';
 import 'package:tmdb/const/constant.dart';
 import 'package:tmdb/model/cast_model.dart';
 import 'package:tmdb/model/movie_model.dart';
@@ -290,6 +289,5 @@ class Movies with ChangeNotifier {
 
   void clearGenre() {
     _genre.clear();
-    // notifyListeners();
   }
 }

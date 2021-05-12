@@ -16,6 +16,7 @@ class MyListsScreen extends StatefulWidget {
 
 class _MyListsScreenState extends State<MyListsScreen>
     with TickerProviderStateMixin, AutomaticKeepAliveClientMixin {
+  // ignore: unused_field
   bool _isEditing = false;
 
   TabController _tabController;

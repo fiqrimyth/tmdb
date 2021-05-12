@@ -104,6 +104,7 @@ class _AddItemDialogState extends State<AddItemDialog> {
   }
 
   Widget _buildToastMessageIcons(Icon icon, String message,
+      // ignore: unused_element
       [double iconSize = 50]) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,

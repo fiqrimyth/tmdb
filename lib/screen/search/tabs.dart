@@ -6,7 +6,9 @@ class Tabs extends StatelessWidget {
   final ValueChanged<int> onTap;
   final List<Widget> tabs;
   final bool isScrollable;
+
   Tabs({this.tabs, this.controller, this.onTap, this.isScrollable = true});
+
   @override
   Widget build(BuildContext context) {
     return TabBar(

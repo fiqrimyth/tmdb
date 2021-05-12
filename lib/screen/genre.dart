@@ -30,28 +30,15 @@ class _GenreState extends State<Genre> {
   var movies = [];
   int genreId;
 
-  // @override
-  // // TODO: implement wantKeepAlive
-  // bool get wantKeepAlive => true;
-
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     scrollController = ScrollController();
     _initLoaded = true;
-    // Future.delayed(Duration.zero).then((value) {
-    // setState(() {
-    //   // genreId = ModalRoute.of(context).settings.arguments as int;
-    //   // print('gernreID------------> $genreId');
-    //   _initLoaded = true;
-    // });
-    // });
   }
 
   @override
   void dispose() {
-    // TODO: implement dispose
     scrollController.dispose();
     super.dispose();
   }
@@ -68,12 +55,8 @@ class _GenreState extends State<Genre> {
         });
       });
     }
-    // _initLoaded = false;
-    // TODO: implement didChangeDependencies
     super.didChangeDependencies();
   }
-
-  Future<void> getFuture() {}
 
   bool onNotification(ScrollNotification notification) {
     if (notification is ScrollUpdateNotification) {
@@ -127,6 +110,7 @@ class _GenreState extends State<Genre> {
                     child: NotificationListener(
                       onNotification: onNotification,
                       child: RefreshIndicator(
+                        // ignore: missing_return
                         onRefresh: () {},
                         // onRefresh: () => _refreshMovies(movies.length == 0),
                         backgroundColor: Theme.of(context).primaryColor,

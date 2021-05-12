@@ -21,6 +21,7 @@ class _MoviesListsState extends State<MoviesLists>
   GlobalKey<AnimatedListState> _listKey;
   bool _isEditing = false;
   bool _initLoaded = true;
+  // ignore: unused_field
   bool _isListLoaded = false;
 
   @override
@@ -77,6 +78,7 @@ class _MoviesListsState extends State<MoviesLists>
   }
 
   Widget _buildToastMessageIcons(Icon icon, String message,
+      // ignore: unused_element
       [double iconSize = 50]) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,

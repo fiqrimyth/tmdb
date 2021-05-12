@@ -40,8 +40,6 @@ class _TVDetailsScreenState extends State<TVDetailsScreen>
   InitData initData;
   TVModel details;
 
-  // prov.TVItem initData;
-
   TextEditingController _textEditingController;
 
   @override
@@ -584,6 +582,7 @@ class _TVDetailsScreenState extends State<TVDetailsScreen>
   }
 
   Widget _buildToastMessageIcons(Icon icon, String message,
+      // ignore: unused_element
       [double iconSize = 50]) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,

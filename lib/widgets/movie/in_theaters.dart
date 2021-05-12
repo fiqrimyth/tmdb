@@ -23,7 +23,9 @@ class _InTheatersGridState extends State<InTheatersGrid>
   bool isLoading = true;
   bool initLoaded = true;
 
+  // ignore: unused_field
   AnimationController _animationController;
+  // ignore: unused_field
   Timer _timer;
 
   int curr = 0;
@@ -146,30 +148,11 @@ class GridItem extends StatefulWidget {
 class _GridItemState extends State<GridItem>
     with SingleTickerProviderStateMixin {
   double imageScale;
+  // ignore: unused_field
   AnimationController _animationController;
 
   void initState() {
     super.initState();
-    // _animationController = AnimationController(
-    //   vsync: this,
-    //   duration: Duration(seconds: 3),
-    //   lowerBound: 1,
-    //   upperBound: 1.1,
-    // )..addListener(() {
-    //     setState(() {
-    //       imageScale = _animationController.value;
-    //     });
-
-    //   })..forward()
-    //   ..addStatusListener((status) {
-    //     if(status == AnimationStatus.completed) {
-    //       // _changeImage();
-    //       // _pageController.nextPage(duration: Duration(seconds: 1), curve: Curves.ease);
-    //       _animationController.reset();
-    //       _animationController.forward();
-    //     }
-    //   })
-    //   ;
   }
 
   String _getGenre() {

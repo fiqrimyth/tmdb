@@ -75,9 +75,6 @@ class MovieModel {
           ? null
           : DateTime.parse(json['release_date']),
 
-      // : json['release_date'],
-      // ? DateTime.tryParse(json['release_date'])
-      // : null,
       originalLanguage: json['original_language'],
       status: json['release_date'] != null,
       voteAverage:

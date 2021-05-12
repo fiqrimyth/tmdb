@@ -193,8 +193,7 @@ class _BackgroundAndTitleState extends State<BackgroundAndTitle>
               children: [
                 Container(
                   margin: const EdgeInsets.only(
-                    left: DEFAULT_PADDING -
-                        5, // TODO find source of the padding at the left
+                    left: DEFAULT_PADDING - 5,
                     right: DEFAULT_PADDING,
                   ),
                   width: 130,

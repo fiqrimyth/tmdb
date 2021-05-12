@@ -33,6 +33,7 @@ class MovieItem extends StatelessWidget {
     return rating == null ? 'N/A' : rating.toString();
   }
 
+  // ignore: unused_element
   String _formatDate(DateTime date) {
     return date == null ? 'N/A' : date.year.toString();
   }

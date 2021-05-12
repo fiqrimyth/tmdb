@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:tmdb/model/init_data.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 
+// ignore: must_be_immutable
 class MyStatefulBuilder extends StatefulWidget {
   final StatefulWidgetBuilder builder;
   // final ValueChanged<String> changeImage;

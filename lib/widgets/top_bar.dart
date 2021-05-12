@@ -10,11 +10,6 @@ class TopBar extends StatelessWidget {
   TopBar({this.title, this.opaque = false});
   @override
   Widget build(BuildContext context) {
-    // return AppBar(
-    //   title: Text(title, style: kTitleStyle),
-    //   centerTitle: true,
-    //   leading: BackButton(),
-    // );
     return Align(
       alignment: Alignment.topCenter,
       child: Container(

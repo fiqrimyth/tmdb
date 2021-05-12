@@ -30,10 +30,12 @@ class _ListItemScreenState extends State<ListItemScreen>
     super.dispose();
   }
 
+  // ignore: unused_element
   void _deleteItem(String title, int id) {
     Provider.of<Lists>(context, listen: false).removeMovieFromList(title, id);
   }
 
+  // ignore: unused_element
   void _deleteFavoriteItem(int id) {
     Provider.of<Lists>(context, listen: false).removeFavoriteMovie(id);
   }
@@ -130,6 +132,7 @@ class _ListItemScreenState extends State<ListItemScreen>
     });
   }
 
+  // ignore: unused_element
   void _deleteList() {
     Future<bool> confirmed =
         _confirmDeletion('This action can\'t be undone. Are you sure?');

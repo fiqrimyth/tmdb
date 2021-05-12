@@ -21,6 +21,7 @@ enum MovieLoaderStatus {
 
 class _TVGenreItemScreenState extends State<TVGenreItemScreen> {
   bool _initLoaded = true;
+  // ignore: unused_field
   bool _isLoading = false;
   bool _isFetching = true;
   ScrollController scrollController;
@@ -56,8 +57,6 @@ class _TVGenreItemScreenState extends State<TVGenreItemScreen> {
     }
     super.didChangeDependencies();
   }
-
-  Future<void> getFuture() {}
 
   bool onNotification(ScrollNotification notification) {
     if (notification is ScrollUpdateNotification) {

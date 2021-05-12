@@ -27,8 +27,6 @@ class TVModel {
   List<dynamic> images;
   List<dynamic> videos;
   List<dynamic> reviews;
-  // List<dynamic> productionCompanies;
-  // List<dynamic> productionContries;
   List<dynamic> cast;
   List<dynamic> crew;
   List<dynamic> recommendations;
@@ -59,8 +57,6 @@ class TVModel {
     this.cast,
     this.status,
     this.mediaType,
-    // this.productionCompanies,
-    // this.productionContries,
     this.networks,
     this.popularity,
     this.recommendations,
@@ -90,9 +86,7 @@ class TVModel {
           (json['last_air_date'] == null || json['last_air_date'] == '')
               ? null
               : DateTime.parse(json['last_air_date']),
-      // : json['release_date'],
-      // ? DateTime.tryParse(json['release_date'])
-      // : null,
+
       episodRuntime: json['episode_run_time'],
       seasons: json['seasons'],
       originalLanguage: json['original_language'],
@@ -109,8 +103,6 @@ class TVModel {
       inProduction: json['in_production'],
       networks: json['networks'],
       createdBy: json['created_by'],
-      // productionCompanies: json['production_companies'],
-      // productionContries: json['production_countries'],
       similar: json['similar'] == null ? [] : json['similar']['results'],
       recommendations: json['recommendations'] == null
           ? []
