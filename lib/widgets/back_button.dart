@@ -7,6 +7,7 @@ class CustomBackButton extends StatelessWidget {
     this.text,
   });
 
+  // ignore: unused_element
   Widget _buildWithText() {
     return FittedBox(
       child: Container(

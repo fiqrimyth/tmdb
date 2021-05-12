@@ -7,7 +7,6 @@ import 'package:tmdb/screen/my_list_screen.dart';
 import 'package:tmdb/screen/tv/tv_details_screen.dart';
 import 'package:tmdb/widgets/placeholder_image.dart';
 
-///
 class ListDataItem extends StatelessWidget {
   final InitData initData;
   ListDataItem(this.initData);
@@ -31,13 +30,6 @@ class ListDataItem extends StatelessWidget {
       else
         str += TV_GENRES[genreIDs[0]];
     }
-    // else {
-    //   int length = genreIDs.length > 3 ? 3 : genreIDs.length;
-    //   for(int i = 0; i < length; i++) {
-    //     if(initData.mediaType == MediaType.Movie) str += MOVIE_GENRES[genreIDs[i]];
-    //     else str += TV_GENRES[genreIDs[i]];
-    //   }
-    // }
     return str;
   }
 
